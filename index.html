@@ -10,16 +10,10 @@
 </head>
 <body style='margin : 0px; overflow: hidden;'>
     <a-scene embedded arjs>
-        <a-assets>
-          <img id="texture" src="./assets/obra.jpg">
-        </a-assets>
-          
-        <a-marker preset="kanji">
-            <a-box color="#fff" depth="1" height="4" width="0.5"></a-box>
-            <a-box src="#texture"></a-box>
-        </a-marker>
-        <a-entity camera></a-entity>
-
+      <a-marker preset="kanji">
+        <a-image height="2" width="1" src="./assets/obra.jpg"></a-image>
+      </a-marker>
+      <a-entity camera></a-entity>
     </a-scene>
   </body>
 </html>
