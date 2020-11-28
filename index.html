@@ -15,14 +15,13 @@
       embedded
       arjs="sourceType: webcam; debugUIEnabled: false;"
     >
-      <a-plane 
-        color="#CCC" 
-        height="5" 
-        width="5"
-        rotation="-90 0 0"
+      <a-text
+        value="Texto"
         look-at="[gps-camera]"
+        scale="20 20 20"
+        rotation="90 0 0"
         gps-entity-place="latitude: -26.974643; longitude: -48.649483;"
-      ></a-plane>
+      ></a-text>
       <a-camera gps-camera rotation-reader> </a-camera>
     </a-scene>
   </body>
