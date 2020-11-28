@@ -13,7 +13,8 @@
     <a-scene
       vr-mode-ui="enabled: false"
       embedded
-      arjs="sourceType: webcam; debugUIEnabled: false;"
+      arjs="sourceType: webcam; videoTexture: true; debugUIEnabled: false;"
+      renderer='antialias: true; alpha: true'
     >
       <a-text
         value="Teste"
@@ -22,7 +23,7 @@
         rotation="90 0 0"
         gps-entity-place="latitude: -26.974483; longitude: -48.649682;"
       ></a-text>
-      <a-camera gps-camera arjs-look-controls='smoothingFactor: 0.1' rotation-reader> </a-camera>
+      <a-camera gps-camera='gpsMinDistance: 1' arjs-look-controls='smoothingFactor: 0.1' rotation-reader> </a-camera>
     </a-scene>
   </body>
 </html>
